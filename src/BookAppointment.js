@@ -19,10 +19,10 @@ function BookAppointment() {
     e.preventDefault();
     console.log('yes');
     emailjs.sendForm(
-      "service_okg8x5m",
-      "template_kqdssep",
+      "service_jx4br1k",
+      "template_e537bi4",
       e.target,
-      "user_J6W3juMedwSXA7gsHUcA9"
+      "ViQ0OXaS8aiGcBtLl"
     ).then((res)=>{
       db.collection('Bookings').add({
         name:name,
