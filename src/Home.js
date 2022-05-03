@@ -5,6 +5,7 @@ import Book from './Component/Book'
 import Gallary from './Component/Gallary'
 import Header from './Component/Header'
 import Location from './Component/Location'
+import Services from './Component/Services'
 import ShowCase from './Component/ShowCase'
 import Frame from './Frame'
 
@@ -14,7 +15,8 @@ function Home() {
             <Header />
             <Banner />
             <Frame/>
-            <Book/>
+            <Services/>
+            {/* <Book/> */}
             <Location/>
             <Gallary/>
             <ShowCase/>

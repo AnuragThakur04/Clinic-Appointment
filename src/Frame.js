@@ -1,5 +1,6 @@
 import React from "react";
 import "./Frame.css";
+import './Styles/Home.css'
 
 function Frame() {
   const card = [
@@ -10,54 +11,47 @@ function Frame() {
       img: "https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/homepage/new__arrivals.jpeg",
     },
     {
-        title: "Shop by Face Shape",
-        desc: "No matter what your face shape is, there’s a flattering style for you. Learn how to choose the best glasses to suit your face shape!",
+      title: "Shop by Face Shape",
+      desc: "No matter what your face shape is, there’s a flattering style for you. Learn how to choose the best glasses to suit your face shape!",
       button: "Learn More",
       img: "https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/homepage/new__arrivals.jpeg",
     },
   ];
 
   const thumb = [
-      {
-          title:'Iconic Range',
-          button:'shop now',
-      },
-      {
-          title: 'Jelly Collection',
-          button: 'shop now',
-      },
-      {
-          title: 'Sunglasses',
-          button: 'shop now',
-      }
+    {
+      title: 'Iconic Range',
+      button: 'shop now',
+    },
+    {
+      title: 'Jelly Collection',
+      button: 'shop now',
+    },
+    {
+      title: 'Sunglasses',
+      button: 'shop now',
+    }
   ]
 
   return (
     <div className="frame">
-      <p>Find the perfect frames with 2 complete pairs from $199</p>
-      <div className="card">
-        {card.map((item)=>(
-            <div className="cardContent">
-                <h2>{item.title}</h2>
-                <h3>
-                    {item.desc}
-                </h3>
-                <button>{item.button}</button>
-            </div>
-        ))}
-      </div>
+      <div class="aboutUs" id="about">
+        <div class="heading wow fadeInLeft">
+          <h1>Something <span>About</span></h1>
+          <h1>Us</h1>
+        </div>
+        <div class="about wow fadeInRight">
+          <ul>
+            <li>The Clinic is Open from 10:00 am to 5:00 pm from Monday to Friday </li>
+            <li> And 10:00 am to 4:00 pm on Saturdays, while Sundays are OFF. </li>
+          </ul>
 
-          <div className="thumb">
-              {thumb.map((item) => (
-                <div className="thumbContent"> 
-                      <h2>{item.title}</h2>
-                      <h3>
-                          {item.desc}
-                      </h3>
-                      <button>{item.button}</button>
-                  </div>
-              ))}
-          </div>
+
+          <a href="#">
+            <h4>View More</h4>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

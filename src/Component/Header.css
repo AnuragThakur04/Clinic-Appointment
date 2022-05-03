@@ -5,16 +5,15 @@ justify-content: space-between;
 background-color: #F3F8E4;
 }
 
-.header_left{
-    background-image: url('../Assets//header.JPG');
-    background-repeat: no-repeat;
+/* .header_left{
+    background: url('../Assets//header.JPG') no-repeat center center/cover;
     object-fit: cover;
-    /* background-position: center; */
+    background-position: center;
     height: 27vh;
     width: 100vw;
     background-color: #F3F8E4;
     flex: 0.5;
-}
+} */
 .header_center{
     flex: 0.5;
     display: flex;

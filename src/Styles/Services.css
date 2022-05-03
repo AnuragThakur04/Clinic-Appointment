@@ -1,0 +1,52 @@
+.story_upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.story_heading > h1 {
+  font-size: 21px;
+  letter-spacing: 3.5px;
+  margin-top: 20px;
+}
+.story_lower {
+  display: flex;
+}
+.story_lowerUpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+}
+.story_lowerUpperLeft {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.story_lowerUpperLeft > h3 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.story_lowerUpperRight {
+  display: flex;
+  align-items: center;
+}
+.cardSection {
+   /* flex:1; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.serviceCard{
+   display: flex;
+   width:30%;
+   margin-left:20px;
+   align-items: center;
+   justify-content: center;
+}

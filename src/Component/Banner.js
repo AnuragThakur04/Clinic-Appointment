@@ -1,24 +1,31 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./Banner.css";
-
+import WOW from 'wowjs';
 function Banner() {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
+  new WOW.WOW({
+    live: false
+  }).init()
   return (
-    <div className="banner">
-      {/* <img src='https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/feb22_dsk.png' alt=''/> */}
-      <div className="bannerContent">
-        <h1>2 complete pairs from</h1>
-        <h1>$199</h1>
-        <p>
-          Whether you like an eye-catching pattern or just subtle pops of
-          colour, we have the glasses for you.
-        </p>
-        <button onClick={()=>navigate('/book')}>Book an Appointment</button>
-        {/* <div className="bannerButton">
-                  <button>shop glasses</button>
-                  <button>shop sunglasses</button>
-        </div> */}
+    <div>
+      <div data-cycle="go" class="cycle slide wow fadeInRight" data-wow-delay="1s">
+        <div class="cycle-inner">
+          <div class="item st1 active">
+            <h1>Treatment type 1</h1>
+          </div>
+          <div class="item st2">
+            <h1>Treatment type 2</h1>
+          </div>
+          <div class="item st3">
+            <h1>Treatment type 3</h1>
+          </div>
+          <div class="item st4">
+            <h1>Treatment type 4</h1>
+          </div>
+        </div>
+      </div>
+      <div class="parallax_content wow fadeInUp" data-wow-delay="0.8s">
       </div>
     </div>
   );
