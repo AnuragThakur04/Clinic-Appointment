@@ -47,7 +47,7 @@ function BookAppointment() {
             Here we'll show welcome message and assurance of treatment of some
             positive words
           </p>
-          <h2>For Help Call: +91 their Number</h2>
+          <h2>For Help Call: +61 their Number</h2>
         </div>
         <form className="bookRight" onSubmit={sendAppointment}>
           <h1>Book Appointment</h1>

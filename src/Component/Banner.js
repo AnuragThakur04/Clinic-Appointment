@@ -12,16 +12,16 @@ function Banner() {
       <div data-cycle="go" class="cycle slide wow fadeInRight" data-wow-delay="1s">
         <div class="cycle-inner">
           <div class="item st1 active">
-            <h1>Treatment type 1</h1>
+            <h1>Acupunture</h1>
           </div>
           <div class="item st2">
-            <h1>Treatment type 2</h1>
+            <h1>Chinese Herbal medicine </h1>
           </div>
           <div class="item st3">
-            <h1>Treatment type 3</h1>
+            <h1>Cupping</h1>
           </div>
           <div class="item st4">
-            <h1>Treatment type 4</h1>
+            <h1>Guasha</h1>
           </div>
         </div>
       </div>

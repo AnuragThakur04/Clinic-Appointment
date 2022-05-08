@@ -20,6 +20,7 @@ function Location() {
           <button>Find Location</button>
         </div>
         <div className="right">
+          
           <img
             src="https://dj3im2gm3txew.cloudfront.net/pub/media/wysiwyg/homepage/locations_ow.jpeg"
             alt=""

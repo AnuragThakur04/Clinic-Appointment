@@ -12,7 +12,7 @@ function Header() {
             <header className="header_left"></header>
             <header className="header_center">
                 <p onClick={()=>navigation('/')} style={{borderBottom:`${pathName === '/' && `3px solid black`}`, cursor:'pointer'}}>Home</p>
-                <p>About us</p>
+                <p onClick={()=>navigation('/')} style={{borderBottom:`${pathName === '/' && `3px solid black`}`, cursor:'pointer'}}>About us</p>
                 <p>Treatments</p>
                 <p>About Doctor</p>
                 <p>Location</p>

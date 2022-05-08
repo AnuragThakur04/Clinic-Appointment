@@ -17,9 +17,9 @@ function Home() {
             <Frame/>
             <Services/>
             {/* <Book/> */}
-            <Location/>
+            {/* <Location/>
             <Gallary/>
-            <ShowCase/>
+            <ShowCase/> */}
             <Adver/>
         </div>
     )
