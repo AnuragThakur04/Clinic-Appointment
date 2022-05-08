@@ -12,10 +12,10 @@ function Header() {
             <header className="header_left"></header>
             <header className="header_center">
                 <p onClick={()=>navigation('/')} style={{borderBottom:`${pathName === '/' && `3px solid black`}`, cursor:'pointer'}}>Home</p>
-                <p onClick={()=>navigation('/')} style={{borderBottom:`${pathName === '/' && `3px solid black`}`, cursor:'pointer'}}>About us</p>
-                <p>Treatments</p>
-                <p>About Doctor</p>
-                <p>Location</p>
+                <p onClick={()=>navigation('/about')} style={{borderBottom:`${pathName === '/about' && `3px solid black`}`, cursor:'pointer'}}>About us</p>
+                <p onClick={()=>navigation('/services')} style={{borderBottom:`${pathName === '/services' && `3px solid black`}`, cursor:'pointer'}}>Treatments</p>
+                <p onClick={()=>navigation('/about/doctor')} style={{borderBottom:`${pathName === '/about/doctor' && `3px solid black`}`, cursor:'pointer'}}>About Doctor</p>
+                <p onClick={()=>navigation('/location')} style={{borderBottom:`${pathName === '/location' && `3px solid black`}`, cursor:'pointer'}}>Location</p>
                 <button onClick={()=>navigation('book')}>Book appointment</button>
             </header>
             {/* <header className="header_right"></header> */}
