@@ -1,43 +1,70 @@
-.header{
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: #F3F8E4;
-position: fixed;
-z-index: 100;
-width: 100vw;
+.header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-top: 5px;
+  height: 200px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar {
+  height: 200px;
+  background-color: #f2f7df !important;
+}
+.header-right {
+  display: flex;
+  flex: 0.5 !important;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar-brand {
+  display: flex;
+  flex: 0.5;
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+  background: url("../Assets/header.JPG") no-repeat;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.header-left > img {
+  height: 180px;
+}
+.header_center {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-nav p {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+.navbar-nav button {
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #111;
+  margin-right: 20px;
 }
 
-/* .header_left{
-    background: url('../Assets//header.JPG') no-repeat center center/cover;
-    object-fit: cover;
-    background-position: center;
-    height: 27vh;
-    width: 100vw;
-    background-color: #F3F8E4;
-    flex: 0.5;
-} */
-.header_center{
-    flex: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.navbar-nav button:hover {
+  background-color: #75bf47;
+  color: white;
+  border: none;
 }
-.header_center p{
-    color: black;
-    font-size: medium;
-    font-weight:600;
-}
-.header_center button{
-    padding: 8px 25px;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: #fff;
-    color: #111;
-}
-
-.header_center button:hover{
-    background-color: #75BF47;
-    color: white;
-    border: none;
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .navbar-brand {
+    width: auto;
+    height: 200px;
+    object-fit: fill;
+    background: url("../Assets/mobileHeader.jpg") no-repeat cover;
+  }
 }
